@@ -684,3 +684,4 @@ pre code { background: none; border: none; padding: 0; color: inherit; font-size
 .gap-6 { gap: var(--space-6); }
 .hidden { display: none !important; }
 @media (max-width: 768px) { .hide-mobile { display: none; } }
+
