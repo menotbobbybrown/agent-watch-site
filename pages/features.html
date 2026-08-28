@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features — agent-watch</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/design-system.css" />
+  <link rel="stylesheet" href="../assets/css/home.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="flex items-center gap-6">
+        <a href="../" class="nav-logo">
+          <div class="nav-logo-mark">▶</div>
+          agent-watch
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="features.html" class="active">Features</a>
+        <a href="../#pricing">Pricing</a>
+        <a href="https://github.com/menotbobbybrown/agent-watch">Docs</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="../#install" class="btn btn-primary btn-sm">Install free</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section-lg">
+    <div class="container text-center">
+      <h1>Built for the context window.</h1>
+      <p class="lead mt-6" style="margin-left:auto; margin-right:auto;">Every feature in agent-watch is designed to maximize visual intelligence while strictly protecting your agent's token limits.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt border-y">
+    <div class="container">
+      <div class="grid-2 items-center">
+        <div>
+          <div class="eyebrow">Smart Deduplication</div>
+          <h2>Never pay for the same frame twice.</h2>
+          <p class="mt-4 text-muted">When a presenter holds on a slide for 90 seconds, agent-watch detects the lack of visual change and collapses it into a single frame. The 16×16 brightness delta pass drops near-duplicates before they ever reach your LLM.</p>
+          <ul class="mt-6 flex flex-col gap-3 text-sm">
+            <li class="flex items-center gap-2"><span class="text-coral">✓</span> Protects context window limits</li>
+            <li class="flex items-center gap-2"><span class="text-coral">✓</span> Lowers token costs</li>
+            <li class="flex items-center gap-2"><span class="text-coral">✓</span> Speeds up agent reasoning time</li>
+          </ul>
+        </div>
+        <div class="card card-tinted" style="padding: 40px; text-align: center;">
+          <div class="font-mono text-xs text-muted mb-4">DEDUPLICATION LOG</div>
+          <code style="display:block; text-align:left; background:#1E2228; color:#00C2A8; padding:20px; border-radius:8px; line-height:1.6;">
+            > frame 0042 kept (score: 1.0)<br>
+            > frame 0043 dropped (delta: 0.02)<br>
+            > frame 0044 dropped (delta: 0.01)<br>
+            > frame 0045 kept (delta: 0.85)<br>
+            <br>
+            <span style="color:#F8B84E">Saved 145 near-duplicate frames.</span>
+          </code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer mt-12">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Solaris Automation</div>
+        <a href="../">Back to home</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
